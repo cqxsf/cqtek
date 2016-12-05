@@ -125,3 +125,64 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	{"humi": "52.59", "in1": "0000", "temp": "25.15", "time": "16-10-10 10:18"}
 	
 注解： humi,in1,temp,time为设备最后一次上传数据
+
+## 设备分组查询##
+
+调用此API，用户可以获得所有分组。
+
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: getAreaInfo	
+	BODY:
+	{"user":"xsf"}
+	
+
+	RESPONSE:
+	["机房","仓库","车间"]
+	
+注解： 为数组形式
+
+
+## 设备分组修改##
+
+调用此API，用户可以修改设备分组。
+
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: setAreaInfo	
+	BODY:
+	{"user":"xsf","oldArea":"机房"，"newArea":"新机房"}
+	
+
+	RESPONSE:
+	{"code":1,"message":"原因"}	
+注解： 操作成功返回code= 0，操作失败返回 code= 1,message = 操作失败的原因
+
+## 设备名称查询##
+
+调用此API，用户可以获得所有分组。
+
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: setAreaInfo	
+	BODY:
+	{"user":"xsf","oldArea":"机房"，"newArea":"新机房"}
+	
+
+	RESPONSE:
+	{"code":1,"message":"原因"}	
+注解： 操作成功返回code= 0，操作失败返回 code= 1,message = 操作失败的原因
+
+
