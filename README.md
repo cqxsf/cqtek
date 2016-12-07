@@ -167,7 +167,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: getAreaInfo	
 	BODY:
-	{"user":"xsf"}
+	{"member_user":"xsf"}
 	
 
 	RESPONSE:
@@ -188,7 +188,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: setAreaInfo	
 	BODY:
-	{"user":"xsf","oldArea":"机房"，"newArea":"新机房"}
+	{"member_user":"xsf","oldArea":"机房"，"newArea":"新机房"}
 	
 
 	RESPONSE:
