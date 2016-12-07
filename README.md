@@ -135,7 +135,7 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	POST
 	
 	HEADER:
-	HTTP_TYPE: get
+	HTTP_TYPE: getRTData
 	
 	BODY:
 	{"snaddr":"设备唯一id","curve":"allLast"}
