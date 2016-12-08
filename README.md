@@ -252,24 +252,6 @@ abnormal具体含义定义:
 	RESPONSE:
 	成功｛"code":"0","msg":"success"｝
 	失败｛"code":"1","msg":"change failed"｝
-
-##  查询设备上传间隔##
-
-调用此API，用户可以查询设备上传间隔。
-
-> POST
-
-	REQUEST:
-	POST
-	
-	HEADER:
-	HTTP_TYPE: getDeviceGap	
-	BODY:
-	{"snaddr":"设备唯一id" }
-	
-
-	RESPONSE:
-	{"snaddr":"设备唯一id","deviceGap":"30"}
 	
 ##  修改设备上传间隔##
 
