@@ -283,7 +283,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: modifyDeviceGap	
 	BODY:
-	{"snaddr":"设备唯一id","deviceGap":"60"}
+	{"snaddr":"设备唯一id","device_gap":"60"}
 	
 
 	RESPONSE:
