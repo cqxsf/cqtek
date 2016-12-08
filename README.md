@@ -195,9 +195,9 @@ abnormal具体含义定义:
 	{"code":1,"message":"原因"}	
 注解： 操作成功返回code= 0，操作失败返回 code= 1,message = 操作失败的原因
 
-## 设备名称查询##
+## 设备信息查询##
 
-调用此API，用户可以获得设备名称。
+调用此API，用户可以获得设备名称等信息。
 
 > POST
 
@@ -205,13 +205,13 @@ abnormal具体含义定义:
 	POST
 	
 	HEADER:
-	HTTP_TYPE: getDevName	
+	HTTP_TYPE: getDevInfo
 	BODY:
 	{"snaddr":"设备唯一id"}
 	
 
 	RESPONSE:
-	成功｛"code":"0","dev_name":"设备名称"｝
+	成功｛"code":"0","dev_name":"设备名称","area": "仓库","device_gap":"30"｝
 	失败｛"code":"1","msg":"request failed"}
 
 ##  修改设备名称##
