@@ -311,3 +311,21 @@ abnormal具体含义定义:
 	｛"code" = "0"，"msg" = "success"｝
 	｛"code" = "1"，"msg" = "failed"｝
 注解： 只有authority管理员权限用户才能物理删除该设备，使用者权限用户只能删除自己跟该设备的关联关系
+
+##  心跳数据##
+
+此API为设备发送给后台的心跳信息。
+
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: beat	
+	BODY:
+	[{"SN":"设备唯一id",Device:[{"IN1":"00","GAP":"0060"}]}]	
+
+	RESPONSE:
+	ERROR:1;00;GAP:0005;
+	
