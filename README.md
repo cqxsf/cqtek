@@ -324,7 +324,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: beat	
 	BODY:
-	[{"SN":"设备唯一id",Device:[{"IN1":"00","GAP":"0060"}]}]	
+	[{"SN":"设备唯一id",Device:[{"Addr":"00","GAP":"0060"}]}]	
 
 	RESPONSE:
 	ERROR:1;00;GAP:0005;
