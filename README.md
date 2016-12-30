@@ -329,3 +329,20 @@ abnormal具体含义定义:
 	RESPONSE:
 	ERROR:1;00;GAP:0005;
 	
+
+##  故障信息接口##
+
+此API为App获取设备的异常列表。
+
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: getErrList
+	BODY:
+	{"member_user":"xsf"}
+
+	RESPONSE:	
+	[{"snaddr":"设备唯一id","设备名":"1号设备"，"area":"仓库" ,"error":"设备离线","startTime":"2016-11-01 11:22:00","endTime":"2016-11-01 11:25:00"},{"snaddr":"设备唯一id","设备名":"2号设备"，"area":"仓库" ,"error":"设备离线","startTime":"2016-11-01 11:22:00","endTime":"2016-11-01 11:25:00"}]
