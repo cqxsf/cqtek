@@ -77,8 +77,8 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	
 
 	RESPONSE:
-	成功｛"code":"0","msg":"success"｝
-	失败｛"code":"1","msg":"failed"｝
+	成功｛"code":0,"msg":"success"｝
+	失败｛"code":1,"msg":"failed"｝
 注解： oldPass,newPass 为用户明文密码MD5加密后的密码
 
 ## 找回密码 ##
@@ -98,8 +98,8 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	
 
 	RESPONSE:
-	成功 {"code":"0","msg":"success"}	
-	失败 {"code":"1","msg":"failed"}
+	成功 {"code":0,"msg":"success"}	
+	失败 {"code":1,"msg":"failed"}
 	
 ## 绑定邮箱 ##
 
@@ -118,8 +118,8 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	
 
 	RESPONSE:
-	成功｛"code":"0","msg":"已发送一条激活链接到邮箱，请进入邮箱点击激活链接才能成功绑定"｝
-	失败｛"code":"1","msg":"failed"｝
+	成功｛"code":0,"msg":"已发送一条激活链接到邮箱，请进入邮箱点击激活链接才能成功绑定"｝
+	失败｛"code":1,"msg":"failed"｝
 	
 ## 查询账户信息 ##
 
@@ -138,8 +138,8 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	
 
 	RESPONSE:
-	成功｛"code":"0","mail":"cqtek1234@126.com"｝
-	失败｛"code":"1","msg":"failed"｝
+	成功｛"code":0,"mail":"cqtek1234@126.com"｝
+	失败｛"code":1,"msg":"failed"｝
 	
 
 
