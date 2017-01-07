@@ -73,7 +73,7 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	HTTP_TYPE: modifyPass
 	
 	BODY:
-	{"user":"xsf" ,"oldPass":"xsf123","oldPass":"321xsf"}
+	{"user":"xsf" ,"oldPass":"xsf123","newPass":"321xsf"}
 	
 
 	RESPONSE:
