@@ -79,7 +79,8 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	RESPONSE:
 	成功｛"code":"0","msg":"success"｝
 	失败｛"code":"1","msg":"failed"｝
-	
+注解： oldPass,newPass 为用户明文密码MD5加密后的密码
+
 ## 找回密码 ##
 
 调用此API，提交用户名，服务器发送密码到绑定的邮箱里。若该账号没有绑定邮箱，做相应的错误提示；
