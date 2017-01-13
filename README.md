@@ -424,9 +424,28 @@ abnormal具体含义定义:
 	POST
 	
 	HEADER:
-	HTTP_TYPE: getErrList
+	HTTP_TYPE: getAccountErr
 	BODY:
 	{"member_user":"xsf"}
 
-	RESPONSE:	
-	[{"snaddr":"设备唯一id","设备名":"1号设备"，"area":"仓库" ,"error":"设备离线","startTime":"2016-11-01 11:22:00","endTime":"2016-11-01 11:25:00"},{"snaddr":"设备唯一id","设备名":"2号设备"，"area":"仓库" ,"error":"设备离线","startTime":"2016-11-01 11:22:00","endTime":"2016-11-01 11:25:00"}]
+	RESPONSE:
+	[
+		{"snaddr":"W2000101",
+		"deviceName":"1号设备"，
+		"area":"仓库" ,
+		"detail":[
+			[" message":"设备离线","type":6,"first_time":"首次报警时间","last_time":"最后报警时间"],
+			[" message":"温度过高","type":1,"first_time":"首次报警时间","last_time":"最后报警时间"],
+			[" message":"湿度过低","type":4,"first_time":"首次报警时间","last_time":"最后报警时间"],
+		]},
+		{"snaddr":"W2000201",
+		"deviceName":"仓库设备"，
+		"area":"仓库" ,
+		"detail":[
+			[" message":"设备离线","type":6,"first_time":"首次报警时间","last_time":"最后报警时间"],
+			[" message":"温度过高","type":1,"first_time":"首次报警时间","last_time":"最后报警时间"],
+			[" message":"湿度过低","type":4,"first_time":"首次报警时间","last_time":"最后报警时间"],
+		]}
+	]
+
+异常type描述 --- 1:温度过高;2:温度过低;3:湿度过高;4:湿度过低;5:开关报警;6:设备离线;7:传感器异常;8:传感器未连接
