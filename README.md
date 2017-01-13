@@ -368,11 +368,11 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: add_device	
 	BODY:
-	{"snaddr":"设备唯一id","device_name":"xx设备","member":"test"}
+	{"mac":"mac地址","member_user":"test"}
 	
 
 	RESPONSE:
-	｛"code" : "0"，"msg": "success"｝
+	｛"code" : "0"，"msg": "success","sn_list":["snaddr1","snaddr2"]｝
 	｛"code" : "1"，"msg": "failed"｝
 注解： snaddr为首次添加的用户对该设备有authority管理员权限，后面做关联添加的用户只有使用者权限
 
@@ -408,7 +408,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: beat	
 	BODY:
-	[{"SN":"设备唯一id",Device:[{"Addr":"00","GAP":"0060"}]}]	
+	[{"SN":"设备唯一id","MAC":"mac地址",Device:[{"Addr":"00","GAP":"0060"}]}]	
 
 	RESPONSE:
 	ERROR:1;00;GAP:0005;
