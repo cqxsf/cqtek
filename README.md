@@ -164,9 +164,9 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	
 
 	RESPONSE:
-	[{"device_key": "35340401911111400", "authority": 0，"dev_name": "设备1"，"area": "仓库"},
-	{"device_key": "35340401911111401", "authority": 0，"dev_name": "设备2"，"area": "仓库"},
-	{"device_key": "35340401911111500", "authority": 1，"dev_name": "设备3"，"area": "仓库"}]
+	[{"snaddr": "35340401911111400", "authority": 0，"dev_name": "设备1"，"area": "仓库"},
+	{"snaddr": "35340401911111401", "authority": 0，"dev_name": "设备2"，"area": "仓库"},
+	{"snaddr": "35340401911111500", "authority": 1，"dev_name": "设备3"，"area": "仓库"}]
 
 ## 查询温湿度阈值 ##
 
