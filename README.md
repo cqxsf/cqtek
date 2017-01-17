@@ -431,7 +431,7 @@ abnormal具体含义定义:
 	RESPONSE:
 	[
 		{"snaddr":"W2000101",
-		"deviceName":"1号设备"，
+		"dev_name":"1号设备"，
 		"area":"仓库" ,
 		"detail":[
 			[" message":"设备离线","type":6,"alarm_time":"报警时间",begin_end_mark=0],
@@ -440,7 +440,7 @@ abnormal具体含义定义:
 			
 		]},
 		{"snaddr":"W2000201",
-		"deviceName":"仓库设备"，
+		"dev_name":"仓库设备"，
 		"area":"仓库" ,
 		"detail":[
 			[" message":"设备离线","type":6,"alarm_time":"报警时间",begin_end_mark=0],
@@ -467,7 +467,7 @@ abnormal具体含义定义:
 
 	RESPONSE:
 	{"snaddr":"W2000201",
-	"deviceName":"仓库设备"，
+	"dev_name":"仓库设备"，
 	"area":"仓库" ,
 	"detail":[
 		[" message":"设备离线","type":6,"alarm_time":"报警时间",begin_end_mark=0],
