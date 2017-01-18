@@ -314,8 +314,8 @@ abnormal具体含义定义:
 	
 
 	RESPONSE:
-	成功｛"code":"0","msg":"success"｝
-	失败｛"code":"1","msg":"change failed"｝
+	成功｛"code":0,"msg":"success"｝
+	失败｛"code":1,"msg":"change failed"｝
 	
 
 ##  修改设备分组##
@@ -334,8 +334,8 @@ abnormal具体含义定义:
 	
 
 	RESPONSE:
-	成功｛"code":"0","msg":"success"｝
-	失败｛"code":"1","msg":"change failed"｝
+	成功｛"code":0,"msg":"success"｝
+	失败｛"code":1,"msg":"change failed"｝
 	
 ##  修改设备上传间隔##
 
@@ -353,8 +353,8 @@ abnormal具体含义定义:
 	
 
 	RESPONSE:
-	｛"code": "0"，"msg": "change success"｝
-	｛"code": "1"，"msg": "change failed"｝
+	｛"code": 0，"msg": "change success"｝
+	｛"code": 1，"msg": "change failed"｝
 	
 ##  新增设备##
 
@@ -372,8 +372,8 @@ abnormal具体含义定义:
 	
 
 	RESPONSE:
-	｛"code" : "0"，"msg": "success","sn_list":["snaddr1","snaddr2"]｝
-	｛"code" : "1"，"msg": "failed"｝
+	｛"code" : 0，"msg": "success","sn_list":["snaddr1","snaddr2"]｝
+	｛"code" : 1，"msg": "failed"｝
 注解： snaddr为首次添加的用户对该设备有authority管理员权限，后面做关联添加的用户只有使用者权限
 
 ##  删除设备##
@@ -392,8 +392,8 @@ abnormal具体含义定义:
 	
 
 	RESPONSE:
-	｛"code" : "0"，"msg": "success"｝
-	｛"code" : "1"，"msg": "failed"｝
+	｛"code" : 0，"msg": "success"｝
+	｛"code" : 1，"msg": "failed"｝
 注解： 只有authority管理员权限用户才能物理删除该设备，使用者权限用户只能删除自己跟该设备的关联关系
 
 ##  心跳数据##
