@@ -434,18 +434,18 @@ abnormal具体含义定义:
 		"dev_name":"1号设备"，
 		"area":"仓库" ,
 		"detail":[
-			{" message":"设备离线","type":6,"alarm_time":"报警时间",begin_end_mark=0},
-			{" message":"设备上线","type":6,"alarm_time":"结束报警时间",begin_end_mark=1},
-			{" message":"湿度过低","type":4,"alarm_time":"报警时间",begin_end_mark=0},
+			{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"0"},
+			{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"1"},
+			{"msg":"湿度过低","type":"4","alarm_time":"报警时间","begin_end_mark":"0"},	
 			
 		]},
 		{"snaddr":"W2000201",
 		"dev_name":"仓库设备"，
 		"area":"仓库" ,
 		"detail":[
-			{" message":"设备离线","type":6,"alarm_time":"报警时间",begin_end_mark=0},
-			{" message":"设备上线","type":6,"alarm_time":"结束报警时间",begin_end_mark=1},
-			{" message":"湿度过低","type":4,"alarm_time":"报警时间",begin_end_mark=0},
+			{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"0"},
+			{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"1"},
+			{"msg":"湿度过低","type":"4","alarm_time":"报警时间","begin_end_mark":"0"},
 		]}
 	]
 
@@ -466,13 +466,14 @@ abnormal具体含义定义:
 	{"snaddr":"设备唯一id","startTime":"起始时间","endTime":"结束时间"}
 
 	RESPONSE:
-	{"snaddr":"W2000201",
+	{
+	"snaddr":"W2000201",
 	"dev_name":"仓库设备"，
 	"area":"仓库" ,
 	"detail":[
-		{" message":"设备离线","type":6,"alarm_time":"报警时间",begin_end_mark=0},
-		{" message":"设备上线","type":6,"alarm_time":"结束报警时间",begin_end_mark=1},
-		{" message":"湿度过低","type":4,"alarm_time":"报警时间",begin_end_mark=0},
+		{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"0"},
+		{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"1"},
+		{"msg":"湿度过低","type":"4","alarm_time":"报警时间","begin_end_mark":"0"},
 	]}
 
 异常type描述 --- 1:温度过高;2:温度过低;3:湿度过高;4:湿度过低;5:开关报警;6:设备离线;7:传感器异常;8:传感器未连接
