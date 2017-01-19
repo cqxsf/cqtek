@@ -17,7 +17,7 @@
 	HTTP_TYPE: login
 
 	BODY:
-	{"member_user":"test","member_password":"password"}
+	{"user":"test","password":"password"}
 
 	RESPONSE:
 	成功：{"code":0,"msg":"success"}
@@ -73,7 +73,7 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	HTTP_TYPE: modifyPass
 	
 	BODY:
-	{"member_user":"xsf" ,"oldPass":"xsf123","newPass":"321xsf"}
+	{"user":"xsf" ,"oldPass":"xsf123","newPass":"321xsf"}
 	
 
 	RESPONSE:
@@ -94,7 +94,7 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	HTTP_TYPE: retrievePass
 	
 	BODY:
-	{"member_user":"xsf" }
+	{"user":"xsf" }
 	
 
 	RESPONSE:
@@ -114,7 +114,7 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	HTTP_TYPE: bindMailbox
 	
 	BODY:
-	{"member_user":"xsf","mail":"cqtek1234@126.com" }
+	{"user":"xsf","mail":"cqtek1234@126.com" }
 	
 
 	RESPONSE:
@@ -134,7 +134,7 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	HTTP_TYPE:  userInfo
 	
 	BODY:
-	{"member_user":"xsf"}
+	{"user":"xsf"}
 	
 
 	RESPONSE:
@@ -160,7 +160,7 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 	HTTP_TYPE: getAllDevice
 	
 	BODY:
-	{"member_user":"test"}	
+	{"user":"test"}	
 	
 
 	RESPONSE:
@@ -251,7 +251,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: getAreaInfo	
 	BODY:
-	{"member_user":"xsf"}
+	{"user":"xsf"}
 	
 
 	RESPONSE:
@@ -272,7 +272,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: setAreaInfo	
 	BODY:
-	{"member_user":"xsf","oldArea":"机房"，"newArea":"新机房"}
+	{"user":"xsf","oldArea":"机房"，"newArea":"新机房"}
 	
 
 	RESPONSE:
@@ -295,7 +295,7 @@ abnormal具体含义定义:
 	
 
 	RESPONSE:
-	成功｛"code":"0","dev_name":"设备名称","area": "仓库","device_gap":"30"｝
+	成功｛"code":"0","devName":"设备名称","area": "仓库","deviceGap":"30"｝
 	失败｛"code":"1","msg":"request failed"}
 
 ##  修改设备名称##
@@ -310,7 +310,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: setDevName	
 	BODY:
-	{"snaddr":"设备唯一id"，"dev_name":"设备名称"}
+	{"snaddr":"设备唯一id"，"devName":"设备名称"}
 	
 
 	RESPONSE:
@@ -349,7 +349,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: modifyDeviceGap	
 	BODY:
-	{"snaddr":"设备唯一id","device_gap":"60"}
+	{"snaddr":"设备唯一id","deviceGap":"60"}
 	
 
 	RESPONSE:
@@ -366,13 +366,13 @@ abnormal具体含义定义:
 	POST
 	
 	HEADER:
-	HTTP_TYPE: add_device	
+	HTTP_TYPE: addDevice	
 	BODY:
-	{"mac":"mac地址","member_user":"test"}
+	{"mac":"mac地址","user":"test"}
 	
 
 	RESPONSE:
-	｛"code" : 0，"msg": "success","sn_list":["snaddr1","snaddr2"]｝
+	｛"code" : 0，"msg": "success","snList":["snaddr1","snaddr2"]｝
 	｛"code" : 1，"msg": "failed"｝
 注解： snaddr为首次添加的用户对该设备有authority管理员权限，后面做关联添加的用户只有使用者权限
 
@@ -386,9 +386,9 @@ abnormal具体含义定义:
 	POST
 	
 	HEADER:
-	HTTP_TYPE: delete_device	
+	HTTP_TYPE: delDevice	
 	BODY:
-	{"snaddr":"设备唯一id","member":"test"}
+	{"snaddr":"设备唯一id","user":"test"}
 	
 
 	RESPONSE:
@@ -426,26 +426,26 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: getAccountErr
 	BODY:
-	{"member_user":"xsf"}
+	{"user":"xsf"}
 
 	RESPONSE:
 	[
 		{"snaddr":"W2000101",
-		"dev_name":"1号设备"，
+		"devName":"1号设备"，
 		"area":"仓库" ,
 		"detail":[
-			{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"0"},
-			{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"1"},
-			{"msg":"湿度过低","type":"4","alarm_time":"报警时间","begin_end_mark":"0"},	
+			{"msg":"设备离线","type":"6","alarmTime":"报警时间","beginEndMark":"0"},
+			{"msg":"设备离线","type":"6","alarmTime":"报警时间","beginEndMark":"1"},
+			{"msg":"湿度过低","type":"4","alarmTime":"报警时间","beginEndMark":"0"},
 			
 		]},
 		{"snaddr":"W2000201",
-		"dev_name":"仓库设备"，
+		"devName":"仓库设备"，
 		"area":"仓库" ,
 		"detail":[
-			{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"0"},
-			{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"1"},
-			{"msg":"湿度过低","type":"4","alarm_time":"报警时间","begin_end_mark":"0"},
+			{"msg":"设备离线","type":"6","alarmTime":"报警时间","beginEndMark":"0"},
+			{"msg":"设备离线","type":"6","alarmTime":"报警时间","beginEndMark":"1"},
+			{"msg":"湿度过低","type":"4","alarmTime":"报警时间","beginEndMark":"0"},
 		]}
 	]
 
@@ -468,12 +468,12 @@ abnormal具体含义定义:
 	RESPONSE:
 	{
 	"snaddr":"W2000201",
-	"dev_name":"仓库设备"，
+	"devName":"仓库设备"，
 	"area":"仓库" ,
 	"detail":[
-		{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"0"},
-		{"msg":"设备离线","type":"6","alarm_time":"报警时间","begin_end_mark":"1"},
-		{"msg":"湿度过低","type":"4","alarm_time":"报警时间","begin_end_mark":"0"},
+		{"msg":"设备离线","type":"6","alarmTime":"报警时间","beginEndMark":"0"},
+		{"msg":"设备离线","type":"6","alarmTime":"报警时间","beginEndMark":"1"},
+		{"msg":"湿度过低","type":"4","alarmTime":"报警时间","beginEndMark":"0"},
 	]}
 
 异常type描述 --- 1:温度过高;2:温度过低;3:湿度过高;4:湿度过低;5:开关报警;6:设备离线;7:传感器异常;8:传感器未连接
