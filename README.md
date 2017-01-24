@@ -295,8 +295,8 @@ abnormal具体含义定义:
 	
 
 	RESPONSE:
-	成功｛"code":"0","devName":"设备名称","area": "仓库","deviceGap":"30"｝
-	失败｛"code":"1","msg":"request failed"}
+	成功｛"code":0, "devName":"设备名称","area": "仓库","deviceGap":"30"｝
+	失败｛"code":1, "msg":"request failed"}
 
 ##  修改设备名称##
 
@@ -489,13 +489,13 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: getHisData
 	BODY:
-	{"snaddr":"设备唯一id","startTime":"起始时间","endTime":"结束时间","rangeTime":5}
+	{"snaddr":"设备唯一id","startTime":"起始时间","endTime":"结束时间","rangeTime":"间隔时间"}
 
 	RESPONSE:
 	{
 		"timeList":["2017-01-01 11:12:11","2017-01-01 11:13:11"],
-		"humiList":[12,24],
-		"tempList":[23,24]
+		"humiList":["12","24"],
+		"tempList":["23","24"]
 	}
 
 
