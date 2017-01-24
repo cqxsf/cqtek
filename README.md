@@ -487,7 +487,7 @@ abnormal具体含义定义:
 	POST
 	
 	HEADER:
-	HTTP_TYPE: getRangeData
+	HTTP_TYPE: getHisData
 	BODY:
 	{"snaddr":"设备唯一id","startTime":"起始时间","endTime":"结束时间","rangeTime":5}
 
