@@ -477,3 +477,25 @@ abnormal具体含义定义:
 	]}
 
 异常type描述 --- 1:温度过高;2:温度过低;3:湿度过高;4:湿度过低;5:开关报警;6:设备离线;7:传感器异常;8:传感器未连接
+
+##  设备历史数据接口##
+
+此API为App获取设备的历史数据，输入间隔参数(单位分钟)，开始结束时间(格式为 YYYY-mm-dd HH:MM:SS)，以设备为维度返回历史数据。
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: getRangeData
+	BODY:
+	{"snaddr":"设备唯一id","startTime":"起始时间","endTime":"结束时间","rangeTime":5}
+
+	RESPONSE:
+	{
+		"timeList":["2017-01-01 11:12:11","2017-01-01 11:13:11"],
+		"humiList":[12,24],
+		"tempList":[23,24]
+	}
+
+
