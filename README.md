@@ -295,7 +295,7 @@ abnormal具体含义定义:
 	
 
 	RESPONSE:
-	成功｛"code":0, "devName":"设备名称","area": "仓库","deviceGap":"30"｝
+	成功｛"code":0, "devName":"设备名称","area": "仓库","devGap":"30"｝
 	失败｛"code":1, "msg":"request failed"}
 
 ##  修改设备名称##
@@ -349,7 +349,7 @@ abnormal具体含义定义:
 	HEADER:
 	HTTP_TYPE: modifyDeviceGap	
 	BODY:
-	{"snaddr":"设备唯一id","deviceGap":"60"}
+	{"snaddr":"设备唯一id","devGap":"60"}
 	
 
 	RESPONSE:
