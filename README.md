@@ -412,6 +412,7 @@ abnormal具体含义定义:
 
 	RESPONSE:
 	ERROR:1;00;GAP:0005;
+	ERROR:1;00;dMaxTemp:35315;dMinTemp:27315;dMaxHumi:9900;dMinHumi:0000; dTempHC:010; dHumiHC:100;   
 	
 ##  补发历史数据##
 
