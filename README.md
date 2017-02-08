@@ -413,7 +413,23 @@ abnormal具体含义定义:
 	RESPONSE:
 	ERROR:1;00;GAP:0005;
 	
+##  补发历史数据##
 
+此API为设备发送给后台的历史数据信息。
+
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: re_put
+	BODY:
+	[{"SN":"设备唯一id","Time":"16-01-01 19:00",Device:[{"Addr":"00","Temp":28667,"Humi":5020,"IN1":"0000"}]}]	
+
+	RESPONSE:
+	ERROR:0;
+	
 ##  故障信息接口##
 
 此API为App获取账号对应所有设备的异常列表。
