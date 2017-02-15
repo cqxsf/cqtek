@@ -356,9 +356,9 @@ abnormal具体含义定义:
 	｛"code": 0，"msg": "change success"｝
 	｛"code": 1，"msg": "change failed"｝
 	
-##  新增设备##
+##  通过mac地址新增设备##
 
-调用此API，用户可以增加设备。
+调用此API，用户可以通过mac地址增加设备。
 
 > POST
 
@@ -375,6 +375,29 @@ abnormal具体含义定义:
 	｛"code" : 0，"msg": "success","snList":["snaddr1","snaddr2"]｝
 	｛"code" : 1，"msg": "failed"｝
 注解： snaddr为首次添加的用户对该设备有authority管理员权限，后面做关联添加的用户只有使用者权限
+
+##  通过snaddr和ac码新增设备接口##
+
+调用此API，用户可以通过snaddr和ac码增加设备。
+
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: addDeviceBySN	
+	BODY:
+	{"snaddr":"snaddr地址","user":"test","ac":"ac码","devName":"设备名称，选填参数"}
+	
+
+	RESPONSE:
+	｛"code" : 0，"msg": "success"｝
+	｛"code" : 1，"msg": "failed"｝
+	｛"code" : 10，"msg": "code！=0则失败，失败原因"｝
+	
+注解： snaddr为首次添加的用户对该设备有authority管理员权限，后面做关联添加的用户只有使用者权限，返回code!=0则添加失败
+
 
 ##  删除设备##
 
