@@ -471,7 +471,27 @@ abnormal具体含义定义:
 	RESPONSE:
 	{"code" : 0，"msg": "success"｝
 	{"code" : 1，"msg": "failed"｝
+
+
+##  设置实时开关报警##
+
+此API为app发送给后台的用于设置设备实时开关报警
+> POST
+
+	REQUEST:
+	POST
 	
+	HEADER:
+	HTTP_TYPE: setRealAlarm	
+	BODY:
+	BODY:	
+	{"snaddr":"snaddr地址","alarm":"0或者1"}
+
+	RESPONSE:
+	{"code" : 0，"msg": "success"｝
+	{"code" : 1，"msg": "failed"｝
+注解：0表示关闭实时开关报警，1表示打开实时开关报警
+
 ##  补发历史数据##
 
 此API为设备发送给后台的历史数据信息。
