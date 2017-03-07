@@ -436,6 +436,41 @@ abnormal具体含义定义:
 	RESPONSE:
 	ERROR:1;00;GAP:0005;
 	ERROR:1;00;dMaxTemp:35315;dMinTemp:27315;dMaxHumi:9900;dMinHumi:0000; dTempHC:010; dHumiHC:100;   
+
+##  修正温度##
+
+此API为app发送给后台的用于修正设备温度值
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: setTemp
+	BODY:
+	{"snaddr":"snaddr地址","temp":"温度值"}
+
+	RESPONSE:
+	{"code" : 0，"msg": "success"｝
+	{"code" : 1，"msg": "failed"｝
+
+
+##  修正湿度##
+
+此API为app发送给后台的用于修正设备湿度值
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: setHumi
+	BODY:
+	{"snaddr":"snaddr地址","humi":"湿度值"}
+
+	RESPONSE:
+	{"code" : 0，"msg": "success"｝
+	{"code" : 1，"msg": "failed"｝
 	
 ##  补发历史数据##
 
