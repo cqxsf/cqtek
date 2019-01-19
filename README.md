@@ -614,4 +614,21 @@ abnormal具体含义定义:
 		"tempList":["23","24"]
 	}
 
+##  添加Android设备token##
 
+此API用于添加android设备的umeng token，用于推送报警
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: setAndroidDevToken
+	BODY:
+	{"user":"用户名","token":"设备token"}
+
+	RESPONSE:
+	{
+		"code":0,
+		"msg":"设备token"
+	}
