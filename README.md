@@ -632,3 +632,22 @@ abnormal具体含义定义:
 		"code":0,
 		"msg":"设备token"
 	}
+
+##  修改设备NodeID ##
+
+此API用于修改设备NodeID
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: setNodeID
+	BODY:
+	{"user":"用户名","snaddr":"设备snaddr","nodeID":"待绑定nodeID"}
+
+	RESPONSE:
+	{
+		"code":0,
+		"msg":"nodeId"
+	}
