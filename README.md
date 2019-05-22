@@ -642,9 +642,9 @@ abnormal具体含义定义:
 	POST
 	
 	HEADER:
-	HTTP_TYPE: setNodeID
+	HTTP_TYPE: setNodeId
 	BODY:
-	{"user":"用户名","snaddr":"设备snaddr","nodeID":"待绑定nodeID"}
+	{"user":"用户名","snaddr":"设备snaddr","nodeId":"待绑定nodeId"}
 
 	RESPONSE:
 	{
