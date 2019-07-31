@@ -651,3 +651,24 @@ abnormal具体含义定义:
 		"code":0,
 		"msg":"nodeId"
 	}
+
+
+## 设备NodeId查询 ##
+
+调用此API，用户可以获得设备NodeId等信息。
+
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: getDeviceSet
+	BODY:
+	{"snaddr":"设备唯一id","user":"用户名"}
+	
+
+	RESPONSE:
+	成功 {"array": {"snaddr": "W21L7601", "humiHC": "1.00", "maxTemp": "38.00", "minTemp": "-20.00", "devName": "W21L7601", "nodeId": "W21L7101", "tempHC": "0.10", "maxHumi": "95.00", "minHumi": "5.00"}, "code": 0}
+	失败｛"code":1, "msg":"request failed"}
+
