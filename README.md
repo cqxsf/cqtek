@@ -672,3 +672,22 @@ abnormal具体含义定义:
 	成功 {"array": {"snaddr": "W21L7601", "humiHC": "1.00", "maxTemp": "38.00", "minTemp": "-20.00", "devName": "W21L7601", "nodeId": "W21L7101", "tempHC": "0.10", "maxHumi": "95.00", "minHumi": "5.00"}, "code": 0}
 	失败｛"code":1, "msg":"request failed"}
 
+## 报警通道设置 ##
+
+调用此API，用户可以打开或关闭报警通道。
+
+> POST
+
+	REQUEST:
+	POST
+	
+	HEADER:
+	HTTP_TYPE: switchAlarmChannel
+	BODY:
+	{"accessToken":"token","user":"用户名","channel":"","alarmStatus":"0:关闭；1:打开"}
+	
+
+	RESPONSE:
+	成功 {"code":0,"channel":"","alarmStatus":"0:关闭；1:打开"}
+
+channel描述 --- state_push：异常状态app推送；data_push：异常数据app推送；state_mail，data_mail邮件推送；state_msm，data_msm短信推送；state_call，data_call电话推送；
